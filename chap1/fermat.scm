@@ -8,15 +8,22 @@
 		)
 	)
 
-	(define (test n)
+	;; Fermat test
+	(define (ftest n)
 		(define rd (+ 1 (random (- n 1))))
 		(= (expmod rd n n) rd)
+	)
+
+	;; Miller-Rabin test
+	(define (mtest n)
+		(define rd (+ 1 (random (- n 1))))
+		(= (expmod rd (- n 1) n) 1)
 	)
 
 	(define (test-iter n times)
 		(cond
 			((= 0 times) #t)
-			((not (test n)) #f)
+			((not (mtest n)) #f)
 			(else (test-iter n (- times 1)))
 		)
 	)
