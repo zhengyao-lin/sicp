@@ -1,3 +1,5 @@
+;; prac 1.2
+
 (define (prime? n)
 	(define (expmod b e m)
 		(cond
