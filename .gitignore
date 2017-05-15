@@ -6,5 +6,9 @@
 *.scm#*
 .#*.scm
 
+*.bci
+*.com
+*.bin
+
 upload.sh
 upload.log
