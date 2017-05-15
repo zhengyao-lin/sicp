@@ -1,4 +1,4 @@
-;; prac 1.37
+;; prac 1.37 continued fraction
 
 (define (cont-frac n d k)
 	(define (f n d k c)

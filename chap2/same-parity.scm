@@ -1,4 +1,4 @@
-(load "reverse")
+; prac 2.20 in a list, output the numbers with the same parity as the first element
 
 (define (same-parity first . rest)
 	(define (iter first rest)
